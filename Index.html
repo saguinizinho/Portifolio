@@ -7,6 +7,7 @@
     <title>Caio Saguini | Análise & Desenvolvimento de Sistemas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         /* Define a fonte Inter como padrão para todo o corpo do documento */
         body {
@@ -69,7 +70,6 @@
    <section class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-600 to-purple-700 text-white overflow-hidden p-6">
     <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
     <div class="relative z-10 max-w-4xl mx-auto reveal-on-scroll">
-        <img src="cs2.png" alt="Logo CS EMPRESARIAL" class="mx-auto mb-6 w-32 h-auto reveal-on-scroll delay-50">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 delay-100">
             Caio Saguini
         </h1>
@@ -263,194 +263,63 @@
         </div>
     </section>
 
-    <section id="contato" class="py-16 sm:py-24 bg-blue-700 text-white p-6">
-        <div class="container mx-auto px-4 text-center reveal-on-scroll delay-100">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Vamos Conversar!</h2>
-            <p class="text-lg mb-10 max-w-2xl mx-auto">
-                Se você tem um projeto em mente, uma oportunidade de trabalho ou apenas quer trocar uma ideia, sinta-se
-                à vontade para entrar em contato.
-            </p>
-            <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl text-gray-800 reveal-on-scroll delay-200">
-                <div class="mb-6 text-left">
-                    <label for="nome" class="block text-gray-700 text-sm font-bold mb-2">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu Nome Completo"
-                        class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-                        required>
-                </div>
-                <div class="mb-6 text-left">
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"
-                        class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus="
-                        ring-blue-500 transition duration-200" required>
-                </div>
-                <div class="mb-6 text-left">
-                    <label for="mensagem" class="block text-gray-700 text-sm font-bold mb-2">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Sua mensagem..."
-                        class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-                        required></textarea>
-                </div>
-                <button type="submit"
-                    class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
-                    Enviar Mensagem
-                </button>
-            </form>
-            <div class="mt-10 reveal-on-scroll delay-300">
-                <p class="text-lg mb-4">Você também pode me encontrar em:</p>
-                <div class="flex justify-center gap-6 text-2xl">
-                    <a href="https://www.linkedin.com/in/caio-saguini-475242237/" target="_blank" rel="noopener noreferrer"
-                        class="hover:text-blue-300 transition duration-300">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9.413h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9.413h3.564v11.039zM22.227 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.456c.98 0 1.772-.773 1.772-1.729V1.729C24 .774 23.207 0 22.227 0z" />
-                        </svg>
-                    </a>
-                    <a href="https://github.com/saguinizinho" target="_blank" rel="noopener noreferrer"
-                        class="hover:text-blue-300 transition duration-300">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.676-.207.676-.465 0-.23-.009-.844-.014-1.655-2.782.603-3.369-1.34-3.369-1.34-.454-1.154-1.107-1.462-1.107-1.462-.907-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.89 1.537 2.342 1.094 2.91.836.09-.65.35-1.094.636-1.347-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.985 1.029-2.685-.103-.253-.446-1.27.098-2.65 0 0 .84-.27 2.75 1.025.798-.222 1.644-.333 2.488-.337.844.004 1.69.115 2.488.337 1.91-1.295 2.749-1.025 2.749-1.025.546 1.38.202 2.398.098 2.65.64.7 1.028 1.595 1.028 2.685 0 3.84-2.339 4.685-4.566 4.935.359.308.673.917.673 1.854 0 1.347-.012 2.428-.012 2.753 0 .259.205.556.683.458C21.133 20.197 24 16.442 24 12.017 24 6.484 19.523 2 14 2h-2z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <footer class="bg-gray-800 text-gray-300 py-8 text-center text-sm">
-        <div class="container mx-auto px-4">
-            <p>&copy; 2025 Caio Saguini. Todos os direitos reservados.</p>
-            <p class="mt-2">Desenvolvido com <span class="text-red-500">&hearts;</span> e Tailwind CSS.</p>
-        </div>
-    </footer>
+   <footer class="bg-gray-800 text-gray-300 py-8 text-center text-sm">
+    <div class="container mx-auto px-4 space-y-3">
+        <p>&copy; 2025 Caio Saguini. Todos os direitos reservados.</p>
 
-    <script>
-        // Função para observar elementos e adicionar a classe 'is-visible' quando eles entram na viewport
-        function setupScrollReveal() {
-            // Seleciona todos os elementos com a classe 'reveal-on-scroll'
-            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        <p>
+            <i class="fas fa-envelope mr-2"></i> caiosaguini1@gmail.com
+            <span class="mx-4"> </span>
+            <i class="fab fa-whatsapp mr-2"></i> +55 16 99428-7210
+        </p>
 
-            // Configura as opções do Intersection Observer
-            const observerOptions = {
-                root: null, // O viewport é o root
-                rootMargin: '0px', // Nenhuma margem extra
-                threshold: 0.1 // O elemento é considerado visível quando 10% dele está na viewport
-            };
+        <p>
+            <a href="https://github.com/saguinizinho" target="_blank" class="hover:text-white transition-colors duration-300">
+                <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+            <span class="mx-4"> </span>
+            <a href="https://www.linkedin.com/in/caio-saguini-475242237/" target="_blank" class="hover:text-white transition-colors duration-300">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+            </a>
+        </p>
+    </div>
+</footer>
 
-            // Cria uma nova instância do Intersection Observer
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    // Se o elemento está intersectando (visível)
-                    if (entry.isIntersecting) {
-                        // Adiciona a classe 'is-visible' para acionar a animação CSS
-                        entry.target.classList.add('is-visible');
-                        // Para de observar o elemento uma vez que ele já foi animado
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+   <script>
+    // Função para observar elementos e adicionar a classe 'is-visible' quando eles entram na viewport
+    function setupScrollReveal() {
+        // Seleciona todos os elementos com a classe 'reveal-on-scroll'
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
-            // Observa cada elemento selecionado
-            revealElements.forEach(element => {
-                observer.observe(element);
+        // Configura as opções do Intersection Observer
+        const observerOptions = {
+            root: null, // viewport como root
+            rootMargin: '0px',
+            threshold: 0.1 // 10% visível para ativar
+        };
+
+        // Cria o observer
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible'); // adiciona classe para animação
+                    observer.unobserve(entry.target); // para de observar após animar
+                }
             });
-        }
+        }, observerOptions);
 
-        // Função para inicializar os listeners dos botões de geração de descrição
-        function setupGeminiIntegration() {
-            const generateButtons = document.querySelectorAll('.generate-description-btn');
+        // Observa todos os elementos
+        revealElements.forEach(element => observer.observe(element));
+    }
 
-            generateButtons.forEach(button => {
-                const projectCard = button.closest('.bg-white');
-                const projectDescriptionElement = projectCard.querySelector('.project-description');
-                const projectTechnologiesElement = projectCard.querySelector('.project-technologies');
-                const resetButton = projectCard.querySelector('.reset-description-btn');
-                const loader = button.querySelector('.loader');
+    // Inicializa quando DOM estiver carregado
+    document.addEventListener('DOMContentLoaded', () => {
+        setupScrollReveal();
+    });
+</script>
 
-                // Adiciona um spinner CSS simples
-                const spinnerStyle = document.createElement('style');
-                spinnerStyle.innerHTML = `
-                    .loader {
-                        border: 2px solid #f3f3f3; /* Light grey */
-                        border-top: 2px solid #3498db; /* Blue */
-                        border-radius: 50%;
-                        width: 16px;
-                        height: 16px;
-                        animation: spin 1s linear infinite;
-                    }
-                    @keyframes spin {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
-                    }
-                `;
-                document.head.appendChild(spinnerStyle);
-
-
-                button.addEventListener('click', async () => {
-                    const originalDescription = projectDescriptionElement.dataset.originalDescription;
-                    const technologies = Array.from(projectTechnologiesElement.querySelectorAll('span')).map(span => span.textContent).join(', ');
-                    const projectName = projectCard.querySelector('h3').textContent;
-
-                    // Desabilita o botão e mostra o loader
-                    button.disabled = true;
-                    loader.classList.remove('hidden');
-                    button.textContent = ''; // Limpa o texto do botão para mostrar apenas o loader
-                    button.appendChild(loader);
-                    button.append(' Gerando...');
-
-                    try {
-                        const prompt = `Gere uma descrição de projeto mais detalhada e profissional para um portfólio de Analista e Desenvolvedor de Sistemas. O projeto se chama "${projectName}". A descrição atual é: "${originalDescription}". As tecnologias utilizadas são: ${technologies}. Foque em como o projeto resolveu um problema, o impacto e as tecnologias chave. Mantenha a descrição concisa, mas informativa.`;
-
-                        let chatHistory = [];
-                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                        const payload = { contents: chatHistory };
-                        const apiKey = ""; // Deixe como está, a Canvas irá fornecer a chave em runtime.
-                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                        const response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        const result = await response.json();
-
-                        if (result.candidates && result.candidates.length > 0 &&
-                            result.candidates[0].content && result.candidates[0].content.parts &&
-                            result.candidates[0].content.parts.length > 0) {
-                            const generatedText = result.candidates[0].content.parts[0].text;
-                            projectDescriptionElement.textContent = generatedText;
-                            button.classList.add('hidden'); // Esconde o botão de gerar
-                            resetButton.classList.remove('hidden'); // Mostra o botão de reset
-                        } else {
-                            projectDescriptionElement.textContent = "Erro ao gerar descrição. Tente novamente.";
-                            console.error("Estrutura de resposta inesperada da API Gemini:", result);
-                        }
-                    } catch (error) {
-                        projectDescriptionElement.textContent = "Erro ao gerar descrição. Verifique sua conexão ou tente mais tarde.";
-                        console.error("Erro ao chamar a API Gemini:", error);
-                    } finally {
-                        // Reabilita o botão e esconde o loader
-                        button.disabled = false;
-                        loader.classList.add('hidden');
-                        button.textContent = '✨ Gerar Descrição Detalhada'; // Restaura o texto original do botão
-                    }
-                });
-
-                resetButton.addEventListener('click', () => {
-                    projectDescriptionElement.textContent = projectDescriptionElement.dataset.originalDescription;
-                    button.classList.remove('hidden'); // Mostra o botão de gerar
-                    resetButton.classList.add('hidden'); // Esconde o botão de reset
-                });
-            });
-        }
-
-        // Chama as funções de configuração quando o DOM estiver completamente carregado
-        document.addEventListener('DOMContentLoaded', () => {
-            setupScrollReveal();
-            setupGeminiIntegration();
-        });
-    </script>
 </body>
 
 </html>
